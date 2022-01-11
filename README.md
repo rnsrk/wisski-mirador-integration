@@ -3,5 +3,5 @@ Package bundle to integration Mirador 3 Image Viewer with Annotations in the Wis
 ## Build
 The index.js and mirador-integration.js are ready to use, anyway if, you want to rebuild, type 
 ~~~bash
-npm i && npm run rebuild
+npm i && npm run build
 ~~~
