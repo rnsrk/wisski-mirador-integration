@@ -1,0 +1,40 @@
+{
+  "name": "wisski-mirador-integration",
+  "version": "0.0.1",
+  "description": "WissKI Integration of the Mirador 3 Image Viewer. More at https://projectmirador.org/ and https://github.com/ProjectMirador/mirador-integration",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Mark Fichtner",
+  "contributors": [
+    {
+      "name": "Jack Reed",
+      "url": "https://www.jack-reed.com/"
+    },
+    {
+      "name": "Chris Beer",
+      "email": "chris@cbeer.info",
+      "url": "http://cbeer.info"
+    },
+    {
+      "name": "D-Groenewegen"
+    },
+    {
+      "name": "Régis Robineau ",
+      "url": "https://regisrob.fr/cv/"
+    }
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.6.0",
+    "mirador": "^3.0.0",
+    "mirador-annotations": "~0.4.0",
+    "mirador-image-tools": "^0.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
