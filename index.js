@@ -1,16 +1,18 @@
 import Mirador from 'mirador/dist/es/src/index';
-import { miradorImageToolsPlugin } from 'mirador-image-tools';
-import miradorAnnotationPlugins from 'mirador-annotations';
-import LocalStorageAdapter from 'mirador-annotations/lib/LocalStorageAdapter'
 import AnnototAdapter from 'mirador-annotations/lib/AnnototAdapter';
+import LocalStorageAdapter from 'mirador-annotations/lib/LocalStorageAdapter'
+import miradorAnnotationPlugins from 'mirador-annotations';
+import miradorDownloadPlugins from 'mirador-dl-plugin';
+import { miradorImageToolsPlugin } from 'mirador-image-tools';
 
 
 window.Mirador = Mirador;
 // The used plugins is specified in the main js.
 window.miradorPlugins = [  
 {name: "annotations", plugin: miradorAnnotationPlugins},  
-{name: "image-tools", plugin: miradorImageToolsPlugin}
-,];
+{name: "image-tools", plugin: miradorImageToolsPlugin},
+{name: "dl-plugin", plugin: miradorDownloadPlugins},
+];
 
 
 // The endpoint of the external annotation server is set in the main js.
