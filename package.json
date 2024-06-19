@@ -1,6 +1,6 @@
 {
   "name": "wisski-mirador-integration",
-  "version": "0.0.1",
+  "version": "1.1",
   "description": "WissKI Integration of the Mirador 3 Image Viewer. More at https://projectmirador.org/ and https://github.com/ProjectMirador/mirador-integration",
   "private": true,
   "scripts": {
@@ -23,6 +23,10 @@
     {
       "name": "Régis Robineau ",
       "url": "https://regisrob.fr/cv/"
+    },
+    {
+      "name": "Robert Nasarek",
+      "url": "https://nasarek.org/"
     }
   ],
   "license": "ISC",
