@@ -3,8 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: './index.js',
-//  debug: true,
   devtool: 'source-map',
+  mode: 'development',
   output: {
     filename: 'mirador-integration.js',
     path: path.resolve(__dirname, './'),
@@ -12,8 +12,10 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.LimitChunkCountPlugin({
-        maxChunks: 1, // disable creating additional chunks
+        maxChunks: 1,
     })
-],
-  
+  ],
+  resolve: {
+    fallback: { "url": false }
+  },
 };
